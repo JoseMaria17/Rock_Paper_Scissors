@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App rock, paper, scissors</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header>
+        <h1>rock, paper, scissors</h1>
+        <p>With HTML, CSS AND JAVASCRIPT</p>
+    </header>
+    <main>
+        <p class="instructions" id="instructions">The first to reach 5 points wins
+        </p>
+
+        <!-- Zona del marcador de puntos -->
+        <div class="marker">
+            <p class="name player-name">
+                Player
+            </p>
+            <p class="name computer-name">
+                Computer
+            </p>
+            <p class="points">
+                <span id="puntos-player">0</span>
+                <span>-</span>
+                <span id="puntos-computer">0</span>
+
+            </p>
+
+        </div>
+       
+       <!-- zona de elige tu arma  -->
+        <div class="choose-your-weapon" id="choose-your-weapon">
+            <h2>Choose your weapon for the next turn</h2>
+
+        <!-- zona de botones de rock, paper, scissors -->
+            <div class="weapons">
+                <button class="weapon" id="piedra✊">✊</button>
+                <button class="weapon" id="papel🤚">🤚</button>
+                <button class="weapon" id="tijera✌">✌</button>
+            </div>
+            <!-- zona del mensaje  -->
+            <div class="message disabled" id="message">
+                <p>
+                    you used <span class="choice" id="choice-player">paper🤚</span> <br>
+                    and the computer chose  <span class="choice" id="choice-computer">rock✊</span>
+                </p>
+                <p id="won-point"> you won a point 🔥</p>
+            </div>
+            
+
+
+        </div>
+        <button class="btn disabled" id="reiniciar">restart game</button>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

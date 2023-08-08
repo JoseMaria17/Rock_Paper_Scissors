@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* Variables de colores */
+
+:root {
+    --clr-gold: #DCC48E;
+    --clr-beige: #EAEFD3;
+    --clr-purple: #27233A;
+}
+
+/* color de fondo y letra */
+
+body {
+    background-color: var(--clr-purple);
+    color: var(--clr-beige);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-beige);
+    color: var(--clr-purple);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instructions {
+    margin-bottom: 2rem;
+}
+
+/* Zona del marcador de puntos */
+
+.marker {
+    background-color: var(--clr-gold);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--clr-purple);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.marker .name {
+    position: absolute;
+    color: var(--clr-beige);
+    background-color: var(--clr-purple);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--clr-gold);
+
+}
+
+.marker .player-name {
+    right: 85%;
+}
+
+.marker .computer-name {
+    left: 85%;
+}
+
+.marker .points {
+    font-size: 1.6rem;
+}
+
+/* zona de elige tu arma */
+
+.choose-your-weapon {
+    margin-bottom: 2rem;
+} 
+
+.choose-your-weapon h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+/* zona de botones de rock, paper, scissors */
+
+.weapons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.weapon {
+    font-size: 2rem;
+    width: 60px;
+    background-color: var(--clr-beige);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+/* zona del mensaje */
+
+.message {
+    margin-top:2rem ;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.message .choice {
+    color: var(--clr-purple);
+    background-color: var(--clr-gold);
+    border-radius: .25rem;
+    padding-inline: .25rem;
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--clr-beige);
+    color: var(--clr-purple);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disabled{
+    display: none;
+} 
+
